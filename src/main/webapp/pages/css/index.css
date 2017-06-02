@@ -1,0 +1,652 @@
+/*index.html 页面content部分*/
+#banner{
+	width: 100%;
+	height: 336px;
+	background-color: #7FFFD4;
+}
+.bannerWrapper{
+	width: 982px;
+	margin: 0 auto;
+	position: relative;
+}
+.bannerIterms{
+	width: 730px;
+	height: 336px;
+	position: relative;
+}
+.bannerIterms a img{
+	position: absolute;
+	display: none;
+	width: 730px;
+	height: 336px;
+	border: none;
+}
+.bannerIterms .show a img{
+	display: block;
+}
+.bannerWrapper .bannerItermsSelect{
+	position: absolute;
+	width: 220px;
+	bottom: 5px;
+	left: 0;
+	right: 0;
+	margin-left: 300px;
+}
+.bannerWrapper .bannerItermsSelect a{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: url(../images/frd_dyn_sprite.png);
+	background-position: -83px -133px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.bannerWrapper .bannerItermsSelect a:hover,.bannerWrapper .bannerItermsSelect .click{
+	background-position: -83px -153px;
+}
+.bannerWrapper .downloadClient{
+	position: relative;
+	width: 252px;
+	height: 336px;
+	background: url(../images/download.png);
+}
+.bannerWrapper .downloadClient a{
+	display: inline-block;
+	position: absolute;
+	width: 213px;
+	height: 56px;
+	bottom: 67px;
+	left: 20px;
+	text-indent: -9999px;
+	background: url(../images/download.png);
+	background-position: -20px -213px;
+}
+.bannerWrapper .downloadClient a:hover{
+	background-position: -1px -341px;
+}
+.bannerWrapper .downloadClient span{
+	display: block;
+	position: absolute;
+	bottom: 40px;
+	left: 30px;
+	color: #8d8d8d;
+}
+.bannerWrapper .bannerLast,.bannerWrapper .bannerNext{
+	display: inline-block;
+	position: absolute;
+	width: 37px;
+	height: 55px;
+	top: 130px;
+	cursor: pointer;
+	background: url(../images/banner.png);
+}
+.bannerWrapper .bannerLast{
+	background-position: 0 -363px;
+	left: -70px;
+}
+.bannerWrapper .bannerNext{
+	background-position: 0 -513px;
+	right: -70px;
+}
+.bannerWrapper .bannerLast:hover{
+	background-position: 0 -433px ;
+}
+.bannerWrapper .bannerNext:hover{
+	background-position: 0 -583px;
+}
+
+#discoverModule{
+	width: 100%;
+	background-color: #f5f5f5;
+}
+#discoverModuleWrapper{
+	width: 982px;
+	margin: 0 auto;
+}
+.discoverModuleLeft a{
+	color: #666666;
+}
+.discoverModuleLeft{
+	width: 709px;
+	background-color: white;
+	border-left: 1px solid #d3d3d3;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-right: 0;
+}
+.discoverModuleLeft .discoverModuleLeftNavStyle{
+	width: 689px;
+	height: 35px;
+	border-bottom: 2px solid rgb(193,13,12);
+}
+.discoverModuleLeft .discoverModuleLeftNavStyle li{
+	float: left;
+	margin-right: 20px;
+}
+.discoverModuleLeft .discoverModuleLeftNavStyle .discoverModuleNavIcon{
+	display: block;
+	float: left;
+	height: 20px;
+	width: 20px;
+	margin: 8px 5px 0 0;
+	background: url(../images/index.png);
+	background-position: -230px -160px;
+}
+.discoverModuleLeft .discoverModuleLeftNavStyle li{
+	line-height: 35px;
+}
+.discoverModuleLeft .discoverModuleLeftNavStyle li a{
+	display: block;
+	float: left;
+	line-height: 35px;
+}
+.discoverModuleLeft .discoverModuleLeftNavStyle li a:hover{
+	text-decoration: underline;
+}
+.discoverModuleLeft .discoverModuleLeftNavStyle .firstNav{
+	margin-top: 0;
+	font-size: 20px;
+	color: rgb(51,51,51);
+}
+.discoverModuleLeft .discoverModuleLeftNavStyle .firstNav:hover{
+	text-decoration: none;
+}
+.discoverModuleLeft .discoverModuleLeftNavStyle li.more{
+	float: right;
+}
+.discoverModuleLeft .discoverModuleLeftNavStyle .more .moreIcon {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	margin-top: 7px;
+	background: url(../images/index.png);
+	background-position: 0 -235px;
+}
+
+.discoverModuleLeft .discoverModuleLeft, .discoverModuleLeft .discoverModuleLeft img{
+	width: 689px;
+	height: 75px;
+	border: none;
+}
+.playlist .playlistItems li{
+	position: relative;
+	width: 140px;
+	height: 204px;
+	float: left;
+	margin-right: 35px;
+	margin-top: 20px;
+}
+.playlist .playlistItems .playlistItem{
+	display: inline-block;
+	position: relative;
+}
+	
+.playlist .playlistItems .playlistItem .playlistImg{
+	width: 140px;
+	height: 140px;
+	border: none;
+}
+.playlist .playlistItems .playlistItem .msk{
+	display: inline-block;
+	width: 140px;
+	height: 140px;;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../images/coverall.png);
+}
+.playlist .playlistItems li p{
+	position: absolute;
+	height: 27px;
+	width: 100%;
+	bottom: 70px;
+	background: url(../images/coverall.png);
+	background-position: 0 -537px;
+}
+.playlist .playlistItems li p span{
+	display: inline-block;
+	float: left;
+	margin-top: 3px;
+}
+.playlist .playlistItems li p .playlistItemsIcon, .playlist .playlistItems li p .playlistplay{
+	width: 22px;
+	height: 22px;
+	background: url(../images/iconall.png);
+}
+.playlist .playlistItems li p .playlistItemsIcon{
+	margin-left: 10px;
+	background-position: 0 -18px;
+}
+.playlist .playlistItems li p .playlistplay{
+	float: right;
+	margin-right: 10px;
+	cursor: pointer;
+	background-position: 3px 3px;
+}
+.playlist .playlistItems li p .playlistplay:hover{
+	background-position: 3px -57px;
+}
+.playlist .playlistItems li p .palyCount{
+	margin-top: 5px;;
+}
+.playlist .playlistItems li .tit{
+	color: rgb(61,61,61);
+	font-weight: bold;
+}
+.playlist .playlistItems li .tit:hover{
+	text-decoration: underline;
+}
+.Advertisement{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+
+.Advertisement img{
+	width: 689px;
+	height: 75px;
+}
+
+
+.albumItemsWrapper{
+	width: 687px;
+	height: 186px;
+	border: 1px solid #D3D3D3;
+	background-color: #F5F5F5;
+	margin-top: 20px;
+	margin-bottom: 40px;;
+}
+.albumItemsWrapper .albumItemsLast, .albumItemsWrapper .albumItemsNext{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-top: 80px;
+	cursor: pointer;
+	background: url(../images/index.png);
+}
+.albumItemsWrapper .albumItemsLast{
+	background-position: -260px -75px;
+}
+.albumItemsWrapper .albumItemsLast:hover{
+	background-position: -280px -75px;
+}
+.albumItemsWrapper .albumItemsNext{
+	background-position: -300px -75px;
+}
+.albumItemsWrapper .albumItemsNext:hover{
+	background-position: -320px -75px;
+}
+.albumItemsWrapper .albumItemsLast{
+	margin-left: 10px;
+}
+.albumItemsWrapper .roll{
+	width: 600px;
+	height: 180px;
+	margin: 0 10px;
+	position: relative;
+}
+.albumItemsWrapper .roll .albumItems li{
+	width: 118px;
+	height: 150px;
+	margin-top: 10px;
+	float: left;
+}
+.albumItems li .albumItem{
+	display: inline-block;
+	position: relative;
+	width: 118px;
+	height: 100px;
+}
+.albumItems li .albumItem .albumItemImg{
+	width: 100px;
+	height: 100px;
+}
+.albumItems li .albumItem .msk{
+	display: inline-block;
+	position: absolute;
+	width: 118px;
+	height: 100px;
+	top: 0;
+	left: 0;
+	background: url(../images/coverall.png);
+	background-position:  0 -570px;
+}
+.albumItems li .albumItemsSongName, .albumItems li .albumItemsSinger{
+	display: inline-block;
+	width : 118px;
+	height: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.albumItems li .albumItemsSongName:hover, .albumItems li .albumItemsSinger:hover{
+	text-decoration: underline;
+}
+.albumItems li .albumItem .albumitemsPlay{
+	display: none;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	bottom: 10px;
+	right: 30px;;
+	cursor: pointer;
+	background: url(../images/iconall.png);
+	background-position: 0 -85px;
+}
+.albumItems li .albumItem .albumitemsPlay:hover{
+	background-position: 0 -110px;
+}
+.albumItems li .albumItem .msk:hover + .albumitemsPlay,.albumItems li .albumItem  .albumitemsPlay:hover{
+	display: inline-block;
+}
+
+.toplist .toplistItems{
+	width: 690px;
+	border: 1px solid #c8c8c8;
+	margin: 20px 0;
+	background-color: #f4f4f4;
+}
+.toplist .toplistItems a:hover{
+	text-decoration: underline;
+}
+.toplistItems .surgeTop, .toplistItems .newsongTop{
+	width: 230px;
+}
+.toplistItems .newsongTop{
+	border: 1px solid #C8C8C8;
+	border-top: none;
+	border-bottom: none;
+}
+.toplistItems .originalityTop{
+	width: 228px;
+}
+.toplistItems .toplistItem .toplistItemNav{
+	height: 120px;
+}
+.toplistItem .toplistItemNav li{
+	float: left;
+	font-size: 14px;
+}
+.toplistItem .toplistItemNav li a{
+	color: rgb(51,51,51);
+	font-weight: bold;	
+}
+.toplistItem .toplistItemNav .nav{
+	position: relative;
+	width: 80px;
+	height: 80px;
+	margin: 20px 0 0 20px;
+}
+
+.toplistItem .toplistItemNav .nav img{
+	width: 80px;
+	height: 80px;
+}
+.toplistItem .toplistItemNav .nav a{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	top: 0;
+	left: 0;
+	background: url(../images/coverall.png);
+	background-position: -145px -57px;
+}
+.toplistItem .toplistItemNav .nav+li{
+	margin: 20px 0 0 10px;
+	width: 116px;
+}
+.toplistItem .toplistItemNav .nav+li a{
+	display: inline-block;
+	width: 100%;
+	float: left;
+}
+.toplistItem .toplistItemNav .nav+li .play,.toplistItem .toplistItemNav .nav+li .collect{
+	width: 22px;
+	height: 22px;
+	margin: 10px 10px 0 0;
+	background: url(../images/index.png);
+}
+.toplistItem .toplistItemNav .nav+li .play{
+	background-position: -267px -205px;
+}
+.toplistItem .toplistItemNav .nav+li .play:hover{
+	background-position: -267px -235px;
+}
+.toplistItem .toplistItemNav .nav+li .collect{
+	background-position: -300px -205px;
+}
+.toplistItem .toplistItemNav .nav+li .collect:hover{
+	background-position: -300px -235px;
+}
+.toplistItems .toplistItem ol li{
+	width: 100%;
+	height: 32px;
+	position: relative;
+	line-height: 32px;
+}
+.toplistItems .toplistItem ol li span,.toplistItems .toplistItem ol li span+a{
+	display: inline-block;
+	position: relative;
+	float: left;
+}
+.toplistItems .toplistItem ol li span{
+	width: 35px;
+	margin-left: 10px;
+	font-size: 16px;
+	text-align: center;
+}
+.toplistItems .toplistItem ol li span+a{
+	width: 170px;
+}
+.toplistItems .toplistItem ol li .top3{
+	color:rgb(193,13,12);
+}
+.toplistItems .toplistItem ol li a:hover{
+	width: 96px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.toplistItems .toplistItem ol li a:hover+ .oper{
+	display: block;
+}
+.toplistItems .toplistItem ol li a+ .oper:hover{
+	display: block;
+}
+.toplistItems .toplistItem ol li a:hover+ .oper:hover{
+	display: block;
+}
+.toplistItems .toplistItem ol li .oper{
+	display: none;
+	position: absolute;
+	height: 19px;
+	width: 82px;
+	top: 5px;
+	right: 0px;
+}
+
+.toplistItems .toplistItem ol li .oper a{
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url(../images/index.png);
+}
+.toplistItems .toplistItem ol li .oper .play{
+	background-position: -267px -268px;
+}
+.toplistItems .toplistItem ol li .oper .play:hover{
+	background-position: -267px -288px;
+}
+.toplistItems .toplistItem ol li .oper .add{
+	background: url(../images/icon.png);
+	background-position: 2px -698px;
+}
+.toplistItems .toplistItem ol li .oper .add:hover{
+	background-position: -20px -698px;
+}
+.toplistItems .toplistItem ol li .oper .collect{
+	background-position: -297px -268px;
+}
+.toplistItems .toplistItem ol li .oper .collect:hover{
+	background-position: -297px -288px;
+}
+
+.toplistItem .viewAll{
+	display: inline-block;
+	width: 100%;
+	height: 32px;
+	background-color: #e8e8e8;
+	line-height: 32px;
+	text-align: right;
+}
+.toplistItem .viewAll a{
+	margin-right: 20px;
+}
+
+
+.discoverModuleRight{
+	width: 248px;
+	height: 1453px;
+	border: 1px solid #d3d3d3;
+	border-top: none;
+	background-color: white;
+	border-bottom: none;
+}
+.discoverModuleRight .userLogin {
+	width: 100%;
+	height: 126px;
+	background: url(../images/index.png);
+}
+.discoverModuleRight .userLogin p{
+	width: 205px;
+	line-height: 22px;
+	color: rgb(102,102,102);
+	margin: 10px auto 20px;
+}
+.discoverModuleRight .userLogin .userLoginButton{
+	display: block;
+	width: 100px;
+	height: 31px;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+	line-height: 31px;
+	font-weight: bold;
+	background: url(../images/index.png);
+	background-position: 0 -195px;
+}
+.discoverModuleRight .userLogin .userLoginButton:hover{
+	background-position: -110px -195px;
+}
+
+.enterSinger{
+	width: 210px;
+	margin: 10px auto;
+}
+.enterSinger a,.HotDJ a,.HotDJ{
+	color: rgb(102,102,102);
+}
+.enterSinger h3,.HotDJ h3 {
+	height: 24px;
+	font-size: 12px;
+	line-height: 24px;
+	border-bottom: 1px solid rgb(204,204,204);
+}
+.enterSinger h3 span{
+	color: rgb(51,51,51) ;
+}
+.enterSinger h3 a{
+	margin-left: 95px;
+}
+.enterSinger h3 a:hover{
+	text-decoration: underline;
+}
+.enterSinger .enterSingerItems li{
+	width: 100%;
+	height: 62px;
+	margin-top: 14px;
+	border: 1px solid #e9e9e9;
+}
+.enterSinger .enterSingerItems li a:hover{
+	display: inline-block;
+	height: 60px;
+	width: 100%;
+	background-color: #F4F4F4;
+}
+.enterSinger .enterSingerItems li a .enterSingerImg{
+	float: left;
+	width: 62px;
+	height: 62px;
+}
+.enterSinger .enterSingerItems li a .enterSingerName,.enterSinger .enterSingerItems li a .enterSingerInformation{
+	display: inline-block;
+	float: left;
+	width: 100px;
+	margin-top: 7px;
+	margin-left: 10px;
+}
+.enterSinger .enterSingerItems li a .enterSingerName{
+	font-size: 14px;
+	color: rgb(51,51,51);
+}
+.enterSinger .enterSingerItems li a .enterSingerInformation{
+	font-size: 12px;
+}
+.enterSinger .applyNeteaseSinger{
+	display: inline-block;
+	width: 100%;
+	height: 29px;
+	margin-top: 10%;
+	text-align: center;
+	line-height: 31px;
+	border: 1px solid rgb(102,102,102);
+	border-radius: 4px;
+	background: url(../images/button2.png);
+	background-position: 0 -59px;
+}
+.enterSinger .applyNeteaseSinger:hover{
+	background-position: 0 -113px;
+}
+
+.HotDJ{
+	width: 210px;
+	margin: 30px auto 0;
+}
+.HotDJ h3{
+	color: rgb(51,51,51);
+	margin-bottom: 20px;
+}
+.HotDJ a:hover{
+	text-decoration: underline;
+}
+.HotDJ .hotDJItems li{
+	position: relative;
+	width: 100%;
+	height: 50px;
+}
+.HotDJ .hotDJItems .HotDJerImg img{
+	display: inline-block;
+	float: left;
+	width: 40px;
+	height: 40px;
+}
+.HotDJ .hotDJItems .HotDJer,.HotDJ .hotDJItems .uic,.HotDJ .hotDJItems .HotDJerInformation{
+	display: inline-block;
+	float: left;
+	margin-top: 3px;
+	margin-left: 10px;
+}
+
+.HotDJ .hotDJItems .uic{
+	width: 11px;
+	height: 13px;
+	margin-top: 5px;
+	margin-left: 2px;
+	background: url(../images/icon.png);
+}
+.HotDJ .hotDJItems .HotDJerInformation{
+	width: 160px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

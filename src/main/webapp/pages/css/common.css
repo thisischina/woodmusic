@@ -1,0 +1,507 @@
+html, body, div, span, object, iframe, h1, h2,h3, h4, h5, h6, p, blockquote, pre, td, 
+textarea, th, fieldset, form , hr, input, legend, ol, ul, button, dd, dl, dt{
+	margin: 0;
+	padding: 0;
+}
+
+ol, ul{
+	list-style: none;
+}
+
+html{
+	height: 100%;
+	width: 100%;
+}
+img{
+	border: none;
+}
+body, button, input, select, textarea{
+	font: 12px/1.5 tahoma,arial, 'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+	color: #c7c7c7;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+}
+
+/* utility */
+.clear{
+	clear: both;
+	display: block;
+	margin: 0;
+	padding: 0;
+	zoom: 1;
+}
+
+.clear:after{
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.float-left{
+	float: left;
+}
+
+.float-right{
+	float: right;
+}
+
+.align-left{
+	text-align: left;
+}
+
+.align-right{
+	text-align: right;
+}
+
+.align-center{
+	text-align: center;
+}
+
+.relative{
+	position: relative;
+}
+
+.dynamic-center {
+	margin: 0 auto;
+}
+
+.clickable{
+	cursor: pointer;
+}
+
+.hide{
+	display: none;
+}
+
+
+/*网页头部样式*/
+.navBarContainer{
+	width: 100%;
+	height: 70px;
+	background: url(../images/topbar.png);
+	background-position: 0 -80px;
+}
+.navBarContainer .navBar{
+	width: 1050px;
+	background: url(../images/topbar.png) 0 -80px;
+	margin: 0 auto;
+	line-height: 70px;
+}
+.navBar a{
+	color: #c7c7c7;
+	font-weight: bold;
+}
+.CMlog, .nav > li,.navBar .search, .navBar .login{
+	display: inline-block;
+}
+.CMlog{
+	width: 177px;
+	height: 70px;
+	background: url(../images/topbar.png) no-repeat;
+	background-position: 0 13px;
+	text-align: center;
+}
+.CMlog a{
+	display: inline-block;
+	width: 157px;
+	height: 300px;
+	text-indent: -9999px;
+}
+.navBar .nav li{
+	float: left;
+}
+.navBar .nav li a{
+	display: inline-block;
+	position: relative;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 15px;
+	background: url(../images/topbar.png);
+	background-position: -240px -300px;
+}
+.navBar .nav li a:hover{
+	background-position: 0 -470px;
+}
+
+.navBar .nav li a span{
+	display: none;
+}
+.navBar .nav li .select{
+	background-position: 0 -160px;
+}
+.navBar .nav li .select span {
+	display: inline-block;
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 16px;
+	height: 9px;
+	background: url(../images/topbar.png);
+	background-position: -225px 0;
+}
+.navBar .nav li .select:hover{
+	background-position: 0 -160px;
+}
+.navBar .nav li a .hot{
+	display: inline-block;
+	width: 30px;
+	height: 20px;
+	background: url(../images/topbar.png);
+	background-position: -192px 0;
+}
+.navBar .search{
+	display: inline-block;
+	width: 210px;
+	height: 32px;
+	margin-left: 5%;
+	margin-top: 18px;
+	font-size: 12px;
+	background: url(../images/topbar.png);
+	background-position: 0 -550px;
+
+}
+.navBar .search .searchText, .navBar .search .searchHint{
+	margin-left: 30px;
+	margin-top: 6px;
+	height: 18px;
+	line-height: 18px;
+	width: 170px;
+}
+.navBar .search .searchText{
+	display: none;
+	color: #2D2D2D;
+	border: none;
+}
+.navBar .search .searchText:focus{
+	border: none;
+}
+.navBar .search .searchHint{
+	cursor: text;
+	padding: 0;
+}
+.navBar .login {
+	display: inline-block;
+	position: relative;
+}
+.navBar .login .navlogin{
+	padding-left: 20px;
+	font-size: 12px;
+}
+.navBar .login .navlogin span{
+	display: inline-block;
+	width: 15px;
+	height: 10px;
+	margin-left: 10px;
+	padding: 0;
+	background: url(../images/topbar.png);
+	background-position: -226px -378px;
+}
+.navBar .login .navlogin:hover span{
+	background-position: -226px -418px;
+}
+.navBar .login .navlogin:hover + .loginWayContainer{
+	display: block;
+}
+.navBar .login .navlogin + .loginWayContainer:hover{
+	display: block;
+}
+.navBar .login .navlogin + .loginWayContainer:hover .loginWay{
+	display: block;
+}
+.navBar .login .loginWayContainer{
+	display: none;
+	position: absolute;
+	height: 50px;
+	width: 100px;
+	left: -20px;
+	top: 40px;
+}
+.navBar .login .navlogin:hover + .loginWayContainer .loginWay{
+	display: block;
+}
+.navBar .login .loginWay{
+	position: absolute;
+	z-index: 2;
+	display: none;
+	line-height: 20px;
+	background-color: rgb(42,42,42);
+	top: 20px;
+	left: -40px;
+}
+.navBar .login .loginWay:hover{
+	display: block;
+}
+.navBar .login .loginWay .backgroundICon{
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 10px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: -9px;;
+	background: url(../images/toplist.png);
+	background-position: -18px 0;
+}
+.navBar .login .loginWay li a{
+	display: inline-block;
+	width: 150px;
+	height: 40px;;
+	line-height: 40px;;
+	padding: 0 20px;
+	font-size: 12px;
+}
+
+.navBar .login .loginWay li a:hover{
+	background-color: rgb(53,53,53);
+}
+.navBar .login .loginWay .loginWagIco{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-top: 10px;
+	margin-right: 10px;
+	background: url(../images/toplist.png);
+}
+.navBar .login .loginWay .phoneLogin .loginWagIco{
+	background-position: 0 0;
+}
+.navBar .login .loginWay .WechatLogin .loginWagIco{
+	background-position: -20px -20px;
+}
+.navBar .login .loginWay .QQLogin .loginWagIco{
+	background-position: -20px -40px;
+}
+.navBar .login .loginWay .XinLangWeiboLogin .loginWagIco{
+	background-position: 0 -20px;
+}
+.navBar .login .loginWay .NetEaseMailLogin .loginWagIco{
+	background-position: 0 -40px;
+}
+
+
+.f-m-NavBarContainer{
+	width: 100%;
+	height: 35px;
+	/*line-height: 35px;*/
+	background: url(../images/topbar.png);
+	background-position: 0 -230px;
+}
+.f-m-NavBarContainer .f-m-NavBar{
+	width: 1050px;
+	height: 33px;
+	margin: 0 auto;
+}
+.f-m-NavBarContainer .f-m-NavBar a{
+	display: inline-block;
+	height: 35px;
+	color: #fcfcfc;
+	font-weight: bold;
+	margin-right: 15px;
+}
+.f-m-NavBarContainer .f-m-NavBar a span{
+	display: inline-block;
+	float: left;
+	padding: 0 15px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	margin-top: 7px;
+}
+.f-m-NavBarContainer .f-m-NavBar .discover{
+	margin-left: 187px;
+}
+.f-m-NavBarContainer .f-m-NavBar .select span{
+	background: url(../images/topbar.png);
+	background-position: -10px -276px;
+	border-radius: 50px;
+}
+.f-m-NavBarContainer .f-m-NavBar a:hover span{
+	background: url(../images/topbar.png);
+	background-position: -10px -276px;
+	border-radius: 50px;
+}
+
+
+
+/*网页底部样式*/
+#footer{
+	width: 100%;
+	height: 129px;
+	position: relative;
+	background-color: #f9f9f9;
+	border-top: solid 1px #d5d5d5;
+}
+.footerContent{
+	width: 980px;
+	margin: 0 auto;
+}
+.footerContent .footerContentLeft,.footerContent .footerContentMiddle{
+	width: 280px;
+	margin-top: 30px;
+}
+.footerContent .footerContentLeft a .title,.footerContent .footerContentMiddle a .title{
+	display: block;
+	margin-bottom: 5px;
+	color: #666666;
+}
+.footerContent .footerContentLeft a .more,.footerContent .footerContentMiddle a .more{
+	display: block;
+	margin-bottom: 5px;
+	color: #999999;
+}
+.footerContent .footerContentLeft a .footerContentLeftBkIcom,.footerContent .footerContentMiddle a .footerContentLeftBkIcom{
+	display: inline-block;
+	height: 48px;
+	width: 50px;
+	background: url(../images/sprite.png);
+	background-position: -400px -78px;
+}
+.footerContent .footerContentMiddle a .footerContentLeftBkIcom{
+	background-position: -400px -123px;
+}
+.footerContent .footerContentRight{
+	width: 420px;
+	margin-top: 30px;
+}
+.footerContent .footerContentRight p{
+	margin-bottom: 5px;
+}
+.footerContent .footerContentRight p a{
+	color: #666666;
+}
+.footerContent .footerContentRight p a:hover{
+	text-decoration: underline;
+}
+
+
+
+/*页面登录框样式*/
+
+.loginBox{
+	position: fixed;
+	width: 528px;
+	margin: 0 auto;
+	top: 250px;
+	left: 0;
+	right: 0;
+	border: 1px solid #2D2D2D;
+	border-radius: 4px;
+	background-color: white;
+}
+.loginBox a{
+	color: #666666;
+}
+.loginBox .loginWay{
+	height: 38px;
+	line-height: 38px;
+	color: white;
+	background-color: #2d2d2d;
+}
+.loginBox .loginWay .loginTitle{
+	display: inline-block;
+	margin-left: 20px;
+	font-size: 15px;
+	font-weight: bold;
+}
+.loginBox .loginWay .loginCancel{
+	display: inline-block;
+	float: right;
+	width: 20px;
+	height: 20px;
+	color: #888888;
+	cursor: pointer;
+	margin-right: 20px;
+}
+.loginBox .loginContent{
+	width: 220px;
+	margin: 20px auto;
+}
+.loginBox .loginContent div{
+	margin-top: 10px;
+}
+.loginBox .loginContent .userName, .loginBox .loginContent .userPassword{
+	display: block;
+	width: 208px;
+	height: 30px;
+	padding: 0 0 0 10px;
+	border: 1px solid #C8C8C8;
+	border-radius: 2px;
+	line-height: 30px;
+}
+
+.loginBox .loginContent .uAuto .loginAuto{
+	margin: 0 12px 0 0;
+	vertical-align: middle;
+}
+.loginBox .loginContent .loginHelpWrapper .forgetPassword{
+	display: inline-block;
+	float: right;
+}
+.loginBox .loginContent .loginHelpWrapper .forgetPassword:hover{
+	text-decoration: underline;
+}
+.loginBox .loginContent .loginButton{
+	display: inline-block;
+	width: 220px;
+	height: 32px;
+	line-height: 32px;
+	border-radius: 2px;
+	text-align: center;
+	color: white;
+	background-color: #2778c6;
+}
+.loginBox .loginContent .loginButton:hover{
+	background-color: #4892d8;
+}
+
+.loginBox .loginOther{
+	width: 100%;
+	height: 48px;
+	line-height: 48px;;
+	border-top: 1px solid #C7C7C7;
+	background-color: #f7f7f7;
+}
+.loginBox .loginOther a{
+	display: inline-block;
+}
+.loginBox .loginOther .choiceOtherWay{
+	margin-left: 20px;
+	color: rgb(12, 114, 195);
+}
+.loginBox .loginOther .signIn{
+	float: right;
+	margin-right: 20px;
+}
+#telephoneNumberLogin{
+	/*visibility: hidden;*/
+	display: none;
+}
+/*#telephoneNumberLogin .show{
+	visibility: visible;
+}*/
+#NeteaseEmailLogin{
+	/*visibility: hidden;*/
+	display: none;
+}
+
+/*回到顶部按钮样式*/
+#goTop{
+	position:fixed;
+	display: none;
+	width: 49px;
+	height: 44px;
+	right: 410px;
+	bottom: 200px;
+	cursor: pointer;
+	background: url(../images/sprite.png);
+	background-position:  -265px -47px;
+}
