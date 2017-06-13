@@ -893,12 +893,52 @@
 				<a href="javascript:;" class="choiceOtherWay">&lt;&nbsp;&nbsp;其他登录方式</a>
 			</div>
 		</div>
-		
+
+		<!--注册框-->
+		<div id="zhuceid" class="loginBox">
+			<div class="loginWay">
+				<span class="loginTitle">手机号注册</span>
+				<span class="loginCancel">X</span>
+			</div>
+			<div class="loginContent">
+				<div class="userNameWrapper">
+					<label style="color: #2d2d2d">手机号：</label>
+					<input type="text" class="userName" placeholder="请输入手机号码" />
+				</div>
+				<div class="userPasswordWrapper">
+					<label  style="color: #2d2d2d">密码：</label>
+					<input type="text" class="userPassword" placeholder="请输入密码" />
+				</div>
+				<div class="loginButtonWrapper">
+					<a onclick="register()" class="loginButton">下一步</a>
+				</div>
+			</div>
+			<div class="loginOther">
+				<a href="javascript:;" class="choiceOtherWay">&lt;&nbsp;&nbsp;其他登录方式</a>
+			</div>
+		</div>
+
 		<!--回到顶部-->
 		<div id="goTop"></div>
 		<div id="player"></div>
 	</body>
 <script>
-	$.ajax({});
+	function register() {
+	    alert("开始注册")
+	    var username=$(".userName").val();
+	    var password=$(".userPassword").val();
+		$.ajax({
+		    type:"post",
+			url:"add",
+			data:{username:username,password:password},
+			error:function(XMLHttpRequest, textStatus, errorThrown){
+				alert("ajax提交失败:"+XMLHttpRequest.status);
+			},
+            success:function(data){
+				alert("注册成功");
+            },
+		});
+    }
+
 </script>
 </html>
