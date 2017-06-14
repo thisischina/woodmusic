@@ -928,8 +928,8 @@
 	    var username=$(".userName").val();
 	    var password=$(".userPassword").val();
 		$.ajax({
-		    type:"post",
-			url:"add",
+		    type:'post',
+			url:'user/add',
 			data:{username:username,password:password},
 			error:function(XMLHttpRequest, textStatus, errorThrown){
 				alert("ajax提交失败:"+XMLHttpRequest.status);
